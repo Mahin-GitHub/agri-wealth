@@ -1,22 +1,24 @@
 import React from 'react';
 import AgriWealthDemoCart from './AgriWealthDemoCart';
 
+
 const AgriWealthDemo = () => {
 
 
     let agriWealthDemoCart = [
-        { img: "/images/demo-1.jpg", title: "Mobile App", description: "Agricultural Investment Platform" },
-        { img: "/images/demo-1.jpg", title: "Mobile App", description: "Agricultural Investment Platform" },
-        { img: "/images/demo-1.jpg", title: "Mobile App", description: "Agricultural Investment Platform" },
-        { img: "/images/demo-1.jpg", title: "Mobile App", description: "Agricultural Investment Platform" },
-        { img: "/images/demo-1.jpg", title: "Mobile App", description: "Agricultural Investment Platform" },
-        { img: "/images/demo-1.jpg", title: "Mobile App", description: "Agricultural Investment Platform" }
+        { img: "/images/full-page.png", title: "Mobile App", description: "Agricultural Investment Platform" },
+        { img: "/images/full-page.png", title: "Mobile App", description: "Agricultural Investment Platform" },
+        { img: "/images/full-page.png", title: "Mobile App", description: "Agricultural Investment Platform" },
+        { img: "/images/full-page.png", title: "Mobile App", description: "Agricultural Investment Platform" },
+        { img: "/images/full-page.png", title: "Mobile App", description: "Agricultural Investment Platform" },
+        { img: "/images/full-page.png", title: "Mobile App", description: "Agricultural Investment Platform" }
     ]
     return (
         <div>
             {/* ~~~~~~~~~~~~~~~~~ AGRIWEALTH  DEMO ~~~~~~~~~~~~~~~  */}
 
-            <section className=' bg-[#F4F7E8] p-[5px]'>
+            <section className=' bg-[#F4F7E8] p-[5px]  ' >
+                
 
                 <div className='text-center'>
                     <p className='text-green-600 font-bold lg:text-xl mb-2 pt-16'>AGRIWEALTH DEMO</p>

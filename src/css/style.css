@@ -5,3 +5,177 @@
 
 }
 
+
+nav .a {
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(251, 255, 251);
+    text-decoration: none;
+    padding: 15px;
+    margin: 4px;
+    transition: .5s;
+}
+
+nav .a:hover{
+    color: #e4fa1f;
+    font-weight: bold;
+   
+}
+nav .a span{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom:2px solid rgb(228, 250, 31);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+nav .a:hover span{
+    transform: scale(1) translate(0);
+    opacity: 1;
+}
+
+
+
+
+
+
+/* Mobile Device Menu  */
+
+ul{
+    position: relative;
+    transform: skewY(-15deg);
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width:200px;
+    padding: 15px;
+    background: rgb(6, 90, 3);
+    transition: 0.5s;
+    font-weight: bold;
+    border: 1px solid rgba(92, 128, 8, 0.349);
+    
+}
+
+ul li:hover{
+    background: skyblue;
+    transform: translate(40px,40px);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: brown;
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+
+}
+
+ul li:hover::before{
+    background: rgb(228, 250, 31);
+}
+
+ul li::after{
+    content: attr(data-text);
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: rgba(0, 0, 0,0.15);
+    font-weight: 600;
+    background-color: #646b27;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    transition: 0.5s;
+    font-size: 1.5em;
+    
+}
+
+ul li:nth-child(1):hover::after{
+    background: rgb(4, 128, 4) ;
+}
+ul li:nth-child(2):hover::after{
+    background: rgb(4, 128, 4) ;
+}
+ul li:nth-child(3):hover::after{
+    background: rgb(4, 128, 4) ;
+}
+ul li:nth-child(4):hover::after{
+    background: rgb(4, 128, 4) ;
+}
+ul li:nth-child(5):hover::after{
+    background: rgb(4, 128, 4) ;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: green;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: 0.5s;
+    
+
+}
+
+ul li:hover a {
+    color: #fff;
+}
+
+ul li:last-child::after {
+    box-shadow: -125px 125px 20px rgba(250, 97, 97, 0.025);
+}
+
+ul li a span{
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    color: rgb(214, 250, 252);
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(45deg) ;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    opacity: 0.6;
+    border: 1px solid burlywood;
+
+}
+
+ul li:hover a span {
+    opacity: 1;
+}
+
+
+.motion{
+
+    font-weight: bold;
+    color: #e4fa1f;
+    margin: 0px auto;
+    text-align: center;
+    animation-duration: 15s;
+}

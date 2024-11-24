@@ -1,7 +1,8 @@
 "use client";
-import Image from 'next/image';
+
 import React from 'react';
 import DemoCheckOutCart from './CheckOutDemoCart';
+import Image from 'next/image';
 
 const CheckOutDemo = () => {
 
@@ -12,13 +13,16 @@ const CheckOutDemo = () => {
         {img:"/images/flutter.png",title:"Flutter User App",description:"The Flutter user app provides a smooth and engaging interface, enabling users to browse products, manage orders, and enjoy a seamless shopping experience on their mobile devices"}
     ]
     return (
-        <div>
+        <div className=' w-full  pt-16' >
 
             {/* ~~~~~~~~~~~~~~~~~ CHECK OUT DEMO ~~~~~~~~~~~~~~~  */}
 
 
-            <section className=' container'>
-                <div className='text-center'>
+            <section className=' container relative '>
+            <div>
+                    {/* <Image className='  w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px] rounded-full absolute z-0 top-6 left-1 sm:top-12 sm:left-4 md:top-16 md:left-16 animate-spin  ' src='/images/spinner-bg.png' width={100} height={100} alt='spinner'/> */}
+                </div>
+                <div className='text-center z-10'>
                     <p className='font-bold text-red-600 sm:text-xl lg:text-2xl mt-8 mb-4'>CHECK OUT OUR DEMOS</p>
                     <h2 className='font-bold text-2xl sm:text-3xl lg:text-5xl mb-12'>Access All Demo Links Here</h2>
                 </div>
