@@ -42,7 +42,7 @@ const AgriWealthDemo = () => {
                 </div>
 
 
-                <div className='container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto justify-center items-center'>
+                <div className='container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:justify-around  mx-auto justify-center items-center'>
 
                     {
                         agriWealthDemoCart.map((data, index) => {
